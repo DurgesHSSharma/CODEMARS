@@ -1,0 +1,115 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Side panel styles */
+  .side-panel {
+    width: 250px;
+    background-color: #e8f8ff;
+    color: rgb(250, 247, 247);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .side-panel h2 {
+    text-align: center;
+  }
+  
+  .side-panel ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-panel ul li {
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #01a3e4;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .side-panel ul li:hover {
+    background-color: #003d80;
+  }
+  
+  .side-panel ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Main dashboard content */
+  .dashboard-main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  .upload-btn, .book-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #0580c7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .upload-btn:hover, .book-btn:hover {
+    background-color: #031b25;
+  }
+  
+  /* Overview Section */
+  .health-overview {
+    margin-bottom: 20px;
+  }
+  
+  .overview-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointments-section, .recent-documents, .reminders-section {
+    margin-bottom: 20px;
+  }
+  
+  .appointments-section .appointment, .reminders-section .reminder {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .documents-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .document {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,100 @@
+/* Register.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Light sky blue background */
+  }
+  
+  /* Container Style */
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height to center vertically */
+    animation: fadeIn 1s ease; /* Fade-in animation */
+  }
+  
+  /* Heading Style */
+  h2 {
+    color: #00796b; /* Primary color for heading */
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Increased font size */
+    text-align: center; /* Center text */
+  }
+  
+  /* Form Style */
+  form {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency for glass effect */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transition: transform 0.3s ease; /* Transition for scaling */
+    animation: slideIn 0.8s ease; /* Slide-in animation for form */
+  }
+  
+  form:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+  }
+  
+  /* Input Field Styles */
+  input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #b2ebf2; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  input:focus {
+    border-color: #00796b; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5); /* Subtle glow effect */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 12px;
+    background-color: #00796b; /* Primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #004d40; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset lift effect when button is pressed */
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

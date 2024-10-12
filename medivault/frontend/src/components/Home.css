@@ -1,0 +1,148 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.home-container {
+  text-align: left;
+}
+
+/* Header styling */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1abc9c;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #e0c80c;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #fff;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: left;
+  
+}
+
+.hero-content h1 {
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.2s;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.5s;
+}
+
+.get-started-btn {
+  padding: 15px 30px;
+  background-color: #1abc9c;
+  color: #333;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.7s;
+}
+
+.get-started-btn:hover {
+  background-color: #f4c542;
+  transform: scale(1.05);
+}
+
+/* Hero Image Styling */
+.hero-image img {
+  max-width: 50%;
+
+  animation: fadeIn 2s forwards 1s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}

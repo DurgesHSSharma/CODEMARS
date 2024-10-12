@@ -1,0 +1,76 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height to center vertically */
+    background-color: #f0f4f8; /* Light background color */
+    animation: fadeIn 1s ease; /* Fade-in animation */
+  }
+  
+  h2 {
+    color: #4CAF50; /* Primary color for heading */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; /* Increased font size */
+    text-align: center; /* Center text */
+  }
+  
+  form {
+    background-color: #ffffff; /* White background for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease; /* Transition for scaling */
+  }
+  
+  form:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  input:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4CAF50; /* Primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset lift effect when button is pressed */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
