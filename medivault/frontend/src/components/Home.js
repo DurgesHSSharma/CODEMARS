@@ -25,7 +25,7 @@ function Home() {
           <button className="get-started-btn">Get Started</button>
         </div>
         <div className="hero-image">
-          <img src="../assets/ss.png" alt="Health Records Demo" className="image-fade-in" />
+          <img src="ss.png" alt="Health Records Demo" className="image-fade-in" />
         </div>
       </main>
     </div>
